@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 570" fill="none">
+<defs>
+<radialGradient id="glow"><stop stop-color="#b4eddb" stop-opacity=".8"/><stop offset="1" stop-color="#e9edf9" stop-opacity="0"/></radialGradient>
+<linearGradient id="sphere" x1="190" y1="130" x2="410" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#edfff8"/><stop offset=".5" stop-color="#b0e4df"/><stop offset="1" stop-color="#8f9eea"/></linearGradient>
+<linearGradient id="line" x1="180" y1="150" x2="415" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#81baa9"/><stop offset="1" stop-color="#6576bb"/></linearGradient>
+<clipPath id="clip"><circle cx="310" cy="275" r="137"/></clipPath>
+<filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter>
+</defs>
+<circle cx="310" cy="275" r="260" fill="url(#glow)"/>
+<g stroke="#dce2f0" stroke-dasharray="3 8"><path d="M65 275h490M310 35v480"/><circle cx="310" cy="275" r="218"/></g>
+<ellipse cx="310" cy="470" rx="124" ry="13" fill="#575cc2" opacity=".09" filter="url(#shadow)"/>
+<g transform="rotate(-29 310 275)"><ellipse cx="310" cy="275" rx="255" ry="106" stroke="#b4bde2" stroke-width="1.4"/><ellipse cx="310" cy="275" rx="233" ry="89" stroke="#c4cce8" stroke-width=".7"/></g>
+<circle cx="310" cy="275" r="137" fill="url(#sphere)"/>
+<g clip-path="url(#clip)" stroke="url(#line)" stroke-opacity=".46" stroke-width=".8">
+<ellipse cx="310" cy="275" rx="35" ry="137"/><ellipse cx="310" cy="275" rx="70" ry="137"/><ellipse cx="310" cy="275" rx="106" ry="137"/>
+<ellipse cx="310" cy="275" rx="137" ry="24"/><ellipse cx="310" cy="275" rx="137" ry="59"/><ellipse cx="310" cy="275" rx="137" ry="98"/>
+<path d="M173 275h274M310 138v274"/>
+<g transform="rotate(-35 310 275)"><ellipse cx="310" cy="275" rx="83" ry="137"/><ellipse cx="310" cy="275" rx="137" ry="60"/></g>
+</g>
+<path d="M88 344c42 47 163 47 287-12 122-58 199-145 171-194" stroke="#929bd3" stroke-width="1.5"/>
+<circle cx="123" cy="343" r="10" fill="#5f60de"/><circle cx="123" cy="343" r="17" stroke="#5f60de" stroke-opacity=".15" stroke-width="6"/>
+<circle cx="492" cy="147" r="8" fill="#5ebda5"/><circle cx="390" cy="72" r="4" fill="#9b9de6"/>
+<g fill="#fff" stroke="#dfe3f0"><rect x="62" y="122" width="123" height="43" rx="13"/><rect x="403" y="355" width="151" height="43" rx="13"/></g>
+<g font-family="ui-monospace,monospace" font-size="12" fill="#6a7190"><text x="84" y="149">&lt; curiosity /&gt;</text><text x="423" y="382">ideas → reality</text></g>
+<g fill="#787e9e"><circle cx="235" cy="94" r="2"/><circle cx="526" cy="288" r="2"/><circle cx="130" cy="425" r="2"/><path d="M478 442v12m-6-6h12M85 214v10m-5-5h10" stroke="#a0a7c5" stroke-width="1.5"/></g>
+</svg>

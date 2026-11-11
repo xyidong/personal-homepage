@@ -1,0 +1,13 @@
+{
+  "name": "yidong-xu-personal-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "许乙东 / Yidong Xu — bilingual personal website",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

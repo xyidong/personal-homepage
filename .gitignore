@@ -1,0 +1,9 @@
+node_modules/
+tmp/
+.sites-runtime/
+.sites-checkout*/
+*.tar.gz
+*.tgz
+.DS_Store
+.env
+.env.*

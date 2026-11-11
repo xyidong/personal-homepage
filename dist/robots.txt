@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://xyidong.github.io/personal-homepage/sitemap.xml
