@@ -15,6 +15,15 @@ for (const [, id] of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(i
 for (const [, asset] of html.matchAll(/(?:src|href)="\.\/([^"?#]+)"/g)) await access(path.join(root, asset));
 const visibleCopy = html.replace(/<head>[\s\S]*?<\/head>/, '').replace(/<[^>]*>/g, '') + JSON.stringify(translations);
 assert.ok(!/(?<!\d)1[3-9]\d{9}(?!\d)|出生年月|政治面貌/.test(visibleCopy), 'Private résumé details must not appear in public copy');
-async function scan(dir) { for (const item of await readdir(dir, { withFileTypes: true })) { const file = path.join(dir, item.name); if (item.isDirectory()) await scan(file); else assert.ok(!/\.pdf$/i.test(item.name), 'Original résumé must not be published'); } }
+async function scan(dir) {
+  for (const item of await readdir(dir, { withFileTypes: true })) {
+    const file = path.join(dir, item.name);
+    if (item.isDirectory()) await scan(file);
+    else {
+      assert.ok(!/\.pdf$/i.test(item.name), 'Original résumé must not be published');
+      if (/\.(html|js|css|svg|xml|txt)$/i.test(item.name)) assert.ok(!/(?<!\d)1[3-9]\d{9}(?!\d)/.test(await readFile(file, 'utf8')), `Phone-like number in public asset: ${item.name}`);
+    }
+  }
+}
 await scan(root);
 console.log(`PASS: ${new Set(keys).size} translated UI keys, both language dictionaries, unique IDs, internal links, local assets, and public-content boundaries.`);

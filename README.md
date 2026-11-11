@@ -3,7 +3,7 @@
 A bilingual personal homepage for research, projects, and engineering experience. Built with HTML, CSS, and JavaScript, with no third-party runtime dependencies, tracking, or external font requests.
 
 - **Website URL:** https://xyidong.github.io/personal-homepage/
-- **Source repository:** https://github.com/xyidong/personal-homepage (private)
+- **Source repository:** https://github.com/xyidong/personal-homepage
 - **Languages:** Chinese / English; remembers the visitor’s choice. Initial language follows the browser. Use `?lang=zh` or `?lang=en` to open a language directly.
 
 ## Local preview
